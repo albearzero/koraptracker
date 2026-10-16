@@ -1100,7 +1100,8 @@ ensureShareModal();
     document.body.style.overflow = '';
   }
 
-  function toggleMenu() {
+  function toggleMenu(e) {
+    if (e) e.stopPropagation();
     if (hamburger.classList.contains('open')) closeMenu();
     else openMenu();
   }
@@ -1117,10 +1118,11 @@ ensureShareModal();
     if (e.key === 'Escape') closeMenu();
   });
 
-  // Close on click outside nav
+  // Close on backdrop or outside click
   document.addEventListener('click', e => {
     if (hamburger.classList.contains('open') &&
-        !navbar.contains(e.target)) {
+        !navbar.contains(e.target) &&
+        (!navLinks.contains(e.target) || e.target === navLinks)) {
       closeMenu();
     }
   });
