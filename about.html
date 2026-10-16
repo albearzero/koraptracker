@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-PH" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Why We Exist: Civic Manifesto | Korap Tracker</title>
+  <meta name="title" content="Why We Exist: Civic Manifesto | Korap Tracker" />
+  <meta name="description" content="Our civic mission: To inform, to educate, and for public awareness. In a democracy, to criticize is to improve. Read why Korap Tracker tracks public funds lost to corruption." />
+  <meta name="keywords" content="Why track corruption Philippines, to criticize is to improve, Korap Tracker manifesto, Philippine governance accountability, public procurement transparency, civic education Philippines, anti-corruption awareness" />
+  <meta name="author" content="Korap Tracker Project" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://halalan-tracker.ph/about.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://halalan-tracker.ph/about.html" />
+  <meta property="og:title" content="Why We Exist: Civic Manifesto | Korap Tracker" />
+  <meta property="og:description" content="To inform, to educate, and for civic awareness. In a democracy, to criticize is to improve. Explore the 4 core pillars of the Korap Tracker accountability platform." />
+  <meta property="og:site_name" content="Korap Tracker" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://halalan-tracker.ph/about.html" />
+  <meta name="twitter:title" content="Why We Exist: Civic Manifesto | Korap Tracker" />
+  <meta name="twitter:description" content="To inform, to educate, and for civic awareness. To criticize is to improve." />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://halalan-tracker.ph/about.html#about",
+        "url": "https://halalan-tracker.ph/about.html",
+        "name": "Why We Exist: Civic Manifesto | Korap Tracker",
+        "description": "The mission, civic philosophy, and 4 core pillars guiding the Korap Tracker public-interest accountability platform.",
+        "inLanguage": "en-PH"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://halalan-tracker.ph/#organization",
+        "name": "Korap Tracker Project",
+        "url": "https://halalan-tracker.ph/",
+        "publishingPrinciples": "https://halalan-tracker.ph/sources.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://halalan-tracker.ph/about.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does Korap Tracker exist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Korap Tracker exists to inform, educate, and create public awareness regarding public fund leakages in the Philippines. Our civic philosophy is rooted in the belief that to criticize is to improve: constructive scrutiny of government spending is the highest form of civic duty and the foundation of systemic reform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the 20% budget leakage figure come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 20% leakage estimate is based on established international procurement corruption benchmarks published by the United Nations Office on Drugs and Crime (UNODC) and World Bank governance diagnostics for developing economies, which calculate that 10% to 25% of public procurement contracts are lost to systemic leakages, kickbacks, and administrative inefficiencies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Korap Tracker affiliated with any political party?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Korap Tracker is an independent, non-partisan, open-source civic-technology project. It does not accept government funding or political donations, and strictly documents public records regardless of administration or political affiliation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are cases in the Hall of Records verified?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every single case in the Hall of Records is linked directly to official primary documents: Commission on Audit (COA) audit reports and notices of disallowance, Sandiganbayan court dockets and decisions, Senate Blue Ribbon Committee resolutions, or Presidential Commission on Good Government (PCGG) accomplishment filings."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-hero {
+      padding-block: clamp(6rem, 10vw, 9rem) clamp(3rem, 5vw, 5rem);
+      padding-inline: var(--inner-pad);
+      text-align: center;
+      border-bottom: 1px solid var(--clr-border);
+      background: var(--clr-surface);
+      position: relative;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(6,182,212,.1), transparent);
+      pointer-events: none;
+    }
+    .about-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    .about-hero-sub {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: var(--clr-text-2);
+      max-width: 760px;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+    .about-body {
+      max-width: var(--inner-max);
+      margin-inline: auto;
+      padding: var(--section-pad) var(--inner-pad);
+    }
+    .creed-narrative {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 16px;
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      margin-bottom: 3.5rem;
+      line-height: 1.8;
+      font-size: 1.02rem;
+      color: var(--clr-text-2);
+    }
+    .creed-narrative p {
+      margin-bottom: 1.25rem;
+    }
+    .creed-narrative p:last-child {
+      margin-bottom: 0;
+    }
+    .creed-narrative strong {
+      color: var(--clr-text-1);
+    }
+    .action-cta-box {
+      background: linear-gradient(135deg, rgba(30,41,59,.6) 0%, rgba(15,23,42,.8) 100%);
+      border: 1px solid var(--clr-border-light);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.25rem;
+    }
+    .action-cta-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .85rem;
+      justify-content: center;
+    }
+    .action-btn-primary {
+      background: var(--clr-purple);
+      color: #fff;
+      font-weight: 700;
+      font-size: .88rem;
+      padding: .75rem 1.4rem;
+      border-radius: 9px;
+      text-decoration: none;
+      transition: all var(--dur-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .action-btn-primary:hover {
+      background: #9333ea;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(168,85,247,.35);
+    }
+    .action-btn-secondary {
+      background: var(--clr-surface-2);
+      color: var(--clr-text-1);
+      border: 1px solid var(--clr-border-light);
+      font-weight: 600;
+      font-size: .88rem;
+      padding: .75rem 1.4rem;
+      border-radius: 9px;
+      text-decoration: none;
+      transition: all var(--dur-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .action-btn-secondary:hover {
+      background: var(--clr-surface-3);
+      border-color: var(--clr-cyan);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <a href="#about-main" class="skip-link">Skip to main content</a>
+
+  <!-- ───── NAVIGATION ───── -->
+  <nav class="navbar scrolled" id="navbar" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Korap Tracker Home">
+        <span class="logo-icon" aria-hidden="true">⚖</span>
+        <span class="logo-text">KORAP</span>
+        <span class="logo-sub">Tracker</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#tracker" class="nav-link">Tracker</a>
+        <a href="index.html#impact" class="nav-link">Human Cost</a>
+        <a href="about.html" class="nav-link active" style="color:var(--clr-cyan)">Why We Exist</a>
+        <a href="index.html#cases" class="nav-link">Cases</a>
+        <a href="index.html#news" class="nav-link">Intel</a>
+        <a href="index.html#methodology" class="nav-link">Methodology</a>
+        <a href="sources.html" class="nav-link" style="color:var(--clr-green)">Sources ✓</a>
+      </div>
+      <div class="nav-cta">
+        <span class="live-badge" title="Live real-time corruption ticker active">
+          <span class="live-dot" aria-hidden="true"></span>
+          LIVE
+        </span>
+        <button class="share-btn nav-share-btn" id="share-btn-nav" onclick="shareAbout()" title="Share this page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="about-hero">
+    <div class="section-inner" style="position:relative">
+      <span class="pill pill--cyan" style="margin-bottom:1rem">WHY WE EXIST</span>
+      <h1>Public money belongs<br/>to <span class="gradient-text">the public.</span></h1>
+      <p class="about-hero-sub">
+        Korap Tracker tracks where it goes, and where it doesn't.
+      </p>
+    </div>
+  </header>
+
+  <main class="about-body" id="about-main">
+    <a href="index.html" class="back-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Tracker
+    </a>
+
+    <!-- PLAIN STATEMENT -->
+    <div class="about-statement reveal in-view">
+      <p>Every peso lost to corruption is a school without a teacher, a patient turned away, a road never built. We built this tracker so those facts stay on the record. Permanently. Clearly. For everyone.</p>
+    </div>
+
+    <!-- PILLARS AS NUMBERED ROWS -->
+    <div class="about-pillars reveal in-view">
+      <div class="about-pillar-row">
+        <span class="ap-num">01</span>
+        <div class="ap-body">
+          <strong>To Inform</strong>
+          <span>Facts only. Every number links to an official COA report, court filing, or Senate record. Nothing is made up.</span>
+        </div>
+      </div>
+      <div class="about-pillar-row">
+        <span class="ap-num">02</span>
+        <div class="ap-body">
+          <strong>To Educate</strong>
+          <span>₱67 billion sounds abstract. "67,000 fully equipped classrooms" doesn't. We make the numbers human.</span>
+        </div>
+      </div>
+      <div class="about-pillar-row">
+        <span class="ap-num">03</span>
+        <div class="ap-body">
+          <strong>For Awareness</strong>
+          <span>Scandals vanish from the news in weeks. We keep the record open. Accountability shouldn't have an expiry date.</span>
+        </div>
+      </div>
+      <div class="about-pillar-row">
+        <span class="ap-num">04</span>
+        <div class="ap-body">
+          <strong>To Criticize is to Improve</strong>
+          <span>Asking questions about public money is not disloyalty. It is the job of every citizen in a democracy.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLAIN CTA -->
+    <div class="about-cta reveal in-view">
+      <a href="index.html#cases" class="action-btn-primary">See the Documented Cases →</a>
+      <a href="sources.html" class="action-btn-secondary">View Sources</a>
+    </div>
+
+    <!-- SHARE STRIP -->
+    <div class="about-share-strip reveal in-view">
+      <div class="share-strip-text">
+        <strong>Spread the word.</strong>
+        <span>Share this page to inform, educate, and keep corruption in the public conversation. Awareness is the first step toward accountability.</span>
+      </div>
+      <button class="share-btn share-btn--prominent" onclick="shareAbout()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Share this page
+      </button>
+    </div>
+  </main>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon" aria-hidden="true">⚖</span>
+        <span class="footer-name">KORAP TRACKER</span>
+      </div>
+      <p class="footer-mission">
+        A public-interest accountability tool. All data sourced from official Philippine government records and verified investigative journalism.
+        Not affiliated with any political party or organization.
+      </p>
+      <p class="footer-legal">
+        Built to inform. Not to accuse. Every number is a citation. Every citation is a link.
+      </p>
+      <div class="footer-links" style="margin-top:.75rem;margin-bottom:.75rem;display:flex;gap:1.25rem;justify-content:center;font-size:.85rem;flex-wrap:wrap">
+        <a href="index.html" style="color:var(--clr-text-2);text-decoration:none">Tracker Home</a> ·
+        <a href="about.html" style="color:var(--clr-cyan);font-weight:600;text-decoration:none">Why We Exist (Manifesto)</a> ·
+        <a href="sources.html" style="color:var(--clr-green);font-weight:600;text-decoration:none">Sources Registry ✓</a>
+      </div>
+      <p class="footer-copy">© 2026 Korap Tracker Project · Open Source · Data from COA, Sandiganbayan, PCGG, Senate</p>
+    </div>
+  </footer>
+  <div id="share-toast" style="display:none;position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:#0f172a;border:1px solid rgba(6,182,212,.5);color:#e2e8f0;padding:.65rem 1.25rem;border-radius:8px;font-size:.85rem;font-weight:600;z-index:10001;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.6)">Link copied to clipboard!</div>
+
+  <!-- Share Modal Dialog -->
+  <div id="share-modal" class="share-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal-card">
+      <div class="share-modal-header">
+        <div class="share-modal-header-text">
+          <h3 id="share-modal-title" class="share-modal-title">Share Civic Manifesto</h3>
+          <p class="share-modal-desc" id="share-modal-desc">Share this page to inform, educate, and keep corruption in the public conversation.</p>
+        </div>
+        <button type="button" class="share-modal-close" id="share-modal-close" aria-label="Close share dialog">&times;</button>
+      </div>
+
+      <div class="share-copy-section">
+        <label class="share-field-label" for="share-url-input">Direct Page Link</label>
+        <div class="share-copy-box">
+          <input type="text" id="share-url-input" class="share-url-input" readonly value="https://halalan-tracker.ph/about.html" />
+          <button type="button" id="share-copy-btn" class="share-copy-btn" title="Copy to clipboard">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="share-copy-text">Copy Link</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="share-social-section">
+        <div class="share-field-label">Share to Social &amp; Messaging</div>
+        <div class="share-social-grid">
+          <a id="share-link-x" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--x">
+            <span class="share-social-icon">𝕏</span>
+            <span>X / Twitter</span>
+          </a>
+          <a id="share-link-fb" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--fb">
+            <span class="share-social-icon">f</span>
+            <span>Facebook</span>
+          </a>
+          <a id="share-link-wa" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--wa">
+            <span class="share-social-icon">💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <a id="share-link-tg" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--tg">
+            <span class="share-social-icon">✈</span>
+            <span>Telegram</span>
+          </a>
+          <a id="share-link-reddit" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--reddit">
+            <span class="share-social-icon">🔴</span>
+            <span>Reddit</span>
+          </a>
+          <a id="share-link-email" href="#" class="share-social-btn share-social-btn--email">
+            <span class="share-social-icon">✉</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="share-device-row" class="share-device-row">
+        <button type="button" id="share-device-btn" class="share-device-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Open Device Share Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function getShareUrl() {
+      if (window.location.protocol === 'file:' || !window.location.hostname || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return 'https://halalan-tracker.ph/about.html';
+      }
+      return window.location.href;
+    }
+
+    function showToast(msg = 'Link copied to clipboard!') {
+      const t = document.getElementById('share-toast');
+      if (t) {
+        t.textContent = msg;
+        t.style.display = 'block';
+        clearTimeout(t._timeout);
+        t._timeout = setTimeout(() => { t.style.display = 'none'; }, 2500);
+      }
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+      }
+      return fallbackCopy(text);
+    }
+
+    function fallbackCopy(text) {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.top = '0';
+        ta.style.left = '-9999px';
+        ta.setAttribute('readonly', '');
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return ok ? Promise.resolve() : Promise.reject();
+      } catch (err) {
+        return Promise.reject(err);
+      }
+    }
+
+    function shareAbout() {
+      const modal = document.getElementById('share-modal');
+      const shareUrl = getShareUrl();
+      const title = 'Why Korap Tracker Exists | Civic Manifesto';
+      const text = 'Public money belongs to the public. Korap Tracker tracks where it goes, and where it does not. Inform. Educate. Hold accountable.';
+
+      document.getElementById('share-url-input').value = shareUrl;
+
+      const encUrl = encodeURIComponent(shareUrl);
+      const encText = encodeURIComponent(text);
+      const encTitle = encodeURIComponent(title);
+
+      document.getElementById('share-link-x').href = `https://twitter.com/intent/tweet?text=${encText}&url=${encUrl}`;
+      document.getElementById('share-link-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encUrl}`;
+      document.getElementById('share-link-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + shareUrl)}`;
+      document.getElementById('share-link-tg').href = `https://t.me/share/url?url=${encUrl}&text=${encText}`;
+      document.getElementById('share-link-reddit').href = `https://reddit.com/submit?url=${encUrl}&title=${encTitle}`;
+      document.getElementById('share-link-email').href = `mailto:?subject=${encTitle}&body=${encodeURIComponent(text + '\n\n' + shareUrl)}`;
+
+      modal.classList.add('open');
+    }
+
+    // Modal controls
+    const shareModal = document.getElementById('share-modal');
+    const closeBtn = document.getElementById('share-modal-close');
+    const copyBtn = document.getElementById('share-copy-btn');
+    const copyTextEl = document.getElementById('share-copy-text');
+    const urlInput = document.getElementById('share-url-input');
+    const deviceBtn = document.getElementById('share-device-btn');
+
+    closeBtn.addEventListener('click', () => shareModal.classList.remove('open'));
+    shareModal.addEventListener('click', e => { if (e.target === shareModal) shareModal.classList.remove('open'); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') shareModal.classList.remove('open'); });
+
+    copyBtn.addEventListener('click', () => {
+      copyText(urlInput.value).then(() => {
+        copyTextEl.textContent = 'Copied!';
+        copyBtn.style.background = 'var(--clr-green)';
+        showToast('Link copied to clipboard!');
+        setTimeout(() => {
+          copyTextEl.textContent = 'Copy Link';
+          copyBtn.style.background = '';
+        }, 2000);
+      }).catch(() => {
+        showToast('Please copy the URL box manually.');
+      });
+    });
+
+    urlInput.addEventListener('click', () => urlInput.select());
+
+    if (deviceBtn) {
+      if (navigator.share) {
+        deviceBtn.style.display = 'flex';
+        deviceBtn.addEventListener('click', () => {
+          navigator.share({
+            title: 'Why Korap Tracker Exists | Civic Manifesto',
+            text: 'Public money belongs to the public. Korap Tracker tracks where it goes, and where it does not.',
+            url: urlInput.value
+          }).catch(() => {});
+        });
+      } else {
+        document.getElementById('share-device-row').style.display = 'none';
+      }
+    }
+
+    // Reveal animation
+    const obs = new IntersectionObserver(els => els.forEach(e => { if(e.isIntersecting) e.target.classList.add('in-view'); }), { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

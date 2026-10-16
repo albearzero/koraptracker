@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-PH" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Korap Tracker | Documenting Stolen Public Funds &amp; Civic Accountability</title>
+  <meta name="title" content="Korap Tracker | Documenting Stolen Public Funds &amp; Civic Accountability" />
+  <meta name="description" content="Korap Tracker tracks public funds lost to corruption in the Philippines in real time. Sourced from official COA audit reports, Sandiganbayan court dockets, and Senate Blue Ribbon investigations. Built to inform, educate, and demand civic accountability." />
+  <meta name="keywords" content="Philippine corruption tracker, Korap Tracker, Philippines corruption statistics, Sandiganbayan plunder cases registry, COA audit disallowances, public funds lost to corruption, graft and corruption Philippines, Pharmally scandal amount, flood control ghost projects 2026, PDAF pork barrel scam, Marcos ill-gotten wealth recovered PCGG, Sara Duterte confidential funds, government procurement transparency Philippines, civic accountability Philippines, why track corruption" />
+  <meta name="author" content="Korap Tracker Project" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="canonical" href="https://halalan-tracker.ph/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://halalan-tracker.ph/" />
+  <meta property="og:title" content="Korap Tracker | Stolen Wealth &amp; Civic Accountability" />
+  <meta property="og:description" content="Explore real-time estimates and official court-documented cases of corruption in the Philippines. Every figure backed by COA reports, court verdicts, and official records. To inform, educate, and demand accountability." />
+  <meta property="og:site_name" content="Korap Tracker" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://halalan-tracker.ph/" />
+  <meta name="twitter:title" content="Korap Tracker | Philippine Corruption Tracker" />
+  <meta name="twitter:description" content="Real-time tracking of public funds lost to corruption in the Philippines. Sourced from COA audits, Sandiganbayan records, and Senate probes." />
+
+  <!-- JSON-LD Structured Data (WebSite, Organization, Dataset, FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://halalan-tracker.ph/#website",
+        "url": "https://halalan-tracker.ph/",
+        "name": "Korap Tracker: Philippine Corruption & Accountability Tracker",
+        "description": "Public-interest civic tool tracking estimated and documented public funds lost to corruption in the Philippines.",
+        "inLanguage": "en-PH"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://halalan-tracker.ph/#organization",
+        "name": "Korap Tracker Project",
+        "url": "https://halalan-tracker.ph/",
+        "publishingPrinciples": "https://halalan-tracker.ph/sources.html",
+        "knowsAbout": [
+          "Philippine Public Finance",
+          "Anti-Graft and Corrupt Practices Act (RA 3019)",
+          "Commission on Audit Reports",
+          "Sandiganbayan Rulings",
+          "Public Procurement Transparency"
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://halalan-tracker.ph/#dataset",
+        "name": "Registry of Documented Philippine Corruption Cases and Budget Leakage Data",
+        "description": "Itemized and source-verified dataset of major Philippine corruption scandals, official COA audits, Sandiganbayan court cases, and procurement losses.",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "temporalCoverage": "1986/2026",
+        "spatialCoverage": {
+          "@type": "Place",
+          "name": "Philippines"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://halalan-tracker.ph/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does Korap Tracker exist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Korap Tracker exists to inform, educate, and create public awareness regarding public fund leakages in the Philippines. Our civic philosophy is rooted in the belief that to criticize is to improve: constructive scrutiny of government spending is the highest form of civic duty and the foundation of systemic reform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the real-time corruption loss calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The live ticker is calculated using the 20% procurement leakage benchmark established by the United Nations Office on Drugs and Crime (UNODC) and the World Bank applied to the Republic of the Philippines national budget benchmark (₱5.768 Trillion), yielding approximately ₱1.154 Trillion annually or ~₱36,591 per second, running in real time from January 1, 2020 to the present."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are cases in the Hall of Records verified?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every single case in the Hall of Records is linked directly to official primary documents: Commission on Audit (COA) audit reports and notices of disallowance, Sandiganbayan court dockets and decisions, Senate Blue Ribbon Committee resolutions, or Presidential Commission on Good Government (PCGG) accomplishment filings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Korap Tracker affiliated with any Philippine political party?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Korap Tracker is an independent, non-partisan, open-source civic-technology project. It does not accept government funding or political donations, and strictly documents public records regardless of administration or political affiliation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip to content for Accessibility & SEO -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ───── NAVIGATION ───── -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Korap Tracker Home">
+        <span class="logo-icon" aria-hidden="true">⚖</span>
+        <span class="logo-text">KORAP</span>
+        <span class="logo-sub">Tracker</span>
+      </a>
+      <div class="nav-links">
+        <a href="#tracker" class="nav-link">Tracker</a>
+        <a href="#impact" class="nav-link">Human Cost</a>
+        <a href="#why" class="nav-link">Why We Exist</a>
+        <a href="#cases" class="nav-link">Cases</a>
+        <a href="#news" class="nav-link">Intel</a>
+        <a href="#methodology" class="nav-link">Methodology</a>
+        <a href="sources.html" class="nav-link" style="color:var(--clr-green)">Sources ✓</a>
+      </div>
+      <div class="nav-cta">
+        <span class="live-badge" title="Live real-time corruption ticker active">
+          <span class="live-dot" aria-hidden="true"></span>
+          LIVE
+        </span>
+        <button class="share-btn nav-share-btn" id="share-btn-nav" onclick="shareKorapTracker()" title="Share this tracker">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- ───── HERO / TICKER SECTION ───── -->
+  <section class="hero" id="tracker">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-radial"></div>
+
+    <div class="hero-inner">
+      <div class="hero-label">
+        <span class="pill pill--red">ESTIMATED LOSS SINCE 2020</span>
+      </div>
+      <h1 class="hero-title">
+        Money Stolen From<br/>
+        <span class="gradient-text">The Filipino People</span>
+      </h1>
+      <p class="hero-subtitle">
+        Based on the Ombudsman's benchmark: <strong>~20% of the national budget</strong> is lost to corruption annually.
+        The meter below runs in real time since 2020.
+      </p>
+
+      <!-- MAIN ODOMETER -->
+      <div class="odometer-wrapper" aria-live="polite" aria-label="Estimated corruption losses since 2020">
+        <div class="currency-symbol">₱</div>
+        <div class="odometer" id="odometer">
+          <span class="odometer-digits" id="odometer-display">0</span>
+        </div>
+      </div>
+
+      <!-- RATE STATS -->
+      <div class="rate-stats">
+        <div class="rate-stat">
+          <span class="rate-value" id="rate-per-sec">₱0</span>
+          <span class="rate-label">per second</span>
+        </div>
+        <div class="rate-divider"></div>
+        <div class="rate-stat">
+          <span class="rate-value" id="rate-per-min">₱0</span>
+          <span class="rate-label">per minute</span>
+        </div>
+        <div class="rate-divider"></div>
+        <div class="rate-stat">
+          <span class="rate-value" id="rate-per-hour">₱0</span>
+          <span class="rate-label">per hour</span>
+        </div>
+      </div>
+
+      <!-- TOGGLE MODES -->
+      <div class="mode-toggle" role="group" aria-label="Tracker mode">
+        <button class="mode-btn active" id="btn-estimated" data-mode="estimated">
+          📊 Estimated (Systemic)
+        </button>
+        <button class="mode-btn" id="btn-confirmed" data-mode="confirmed">
+          📋 Confirmed Cases Only
+        </button>
+      </div>
+
+      <p class="source-note" id="source-note">
+        Cumulative loss since Jan 1, 2020 to date: ~₱1.154T/year (~₱36,591/sec) × 6.75+ years ≈ <strong>~₱7.8 Trillion</strong>
+        · Based on the 20% UNODC &amp; World Bank procurement leakage benchmark applied to the national budget ·
+        <a href="sources.html" style="color:var(--clr-green);text-decoration:none;font-weight:600">Full Citations ✓</a>
+      </p>
+
+      <!-- DOWN ARROW -->
+      <a href="#impact" class="scroll-down" aria-label="Scroll to human cost section">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ───── HUMAN COST SECTION ───── -->
+  <section class="impact-section" id="impact">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="pill pill--amber">HUMAN COST CALCULATOR</span>
+        <h2 class="section-title">What That Money Could Have Built</h2>
+        <p class="section-subtitle">
+          Abstract trillions are hard to feel. Here is what the estimated <strong>~₱7.8 Trillion</strong> lost since 2020 could instead have delivered to Filipinos.
+        </p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card reveal" style="--delay:0ms">
+          <div class="impact-icon">🏫</div>
+          <div class="impact-number" data-target="3118400">3.1M</div>
+          <div class="impact-label">Classrooms Built</div>
+          <div class="impact-note">at ₱2,500,000 per classroom (DepEd standard)</div>
+        </div>
+        <div class="impact-card reveal" style="--delay:100ms">
+          <div class="impact-icon">🏥</div>
+          <div class="impact-number" data-target="155920000">155.9M</div>
+          <div class="impact-label">Hospital Admissions Covered</div>
+          <div class="impact-note">at ₱50,000 per hospitalization (PhilHealth average)</div>
+        </div>
+        <div class="impact-card reveal" style="--delay:200ms">
+          <div class="impact-icon">💊</div>
+          <div class="impact-number" data-target="19490000000">19.5B</div>
+          <div class="impact-label">Medicine Packets Distributed</div>
+          <div class="impact-note">at ₱400 per essential medicines pack</div>
+        </div>
+        <div class="impact-card reveal" style="--delay:300ms">
+          <div class="impact-icon">🎓</div>
+          <div class="impact-number" data-target="77960000">78.0M</div>
+          <div class="impact-label">College Scholarships Funded</div>
+          <div class="impact-note">at ₱100,000 per year (CHED tuition subsidy)</div>
+        </div>
+        <div class="impact-card reveal" style="--delay:400ms">
+          <div class="impact-icon">🚰</div>
+          <div class="impact-number" data-target="15592000">15.6M</div>
+          <div class="impact-label">Barangay Water Systems</div>
+          <div class="impact-note">at ₱500,000 per potable water project</div>
+        </div>
+        <div class="impact-card reveal" style="--delay:500ms">
+          <div class="impact-icon">🍚</div>
+          <div class="impact-number" data-target="6236800000">6.2B</div>
+          <div class="impact-label">25kg Sacks of Subsidized Rice</div>
+          <div class="impact-note">at ₱1,250 per 25kg sack (₱50/kg retail)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── WHY WE EXIST SECTION ───── -->
+  <section class="why-section" id="why" aria-label="Why Korap Tracker exists">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="pill pill--cyan">WHY WE EXIST</span>
+        <h2 class="section-title">Public money belongs to the public.</h2>
+        <p class="section-subtitle">We built this tracker so the facts stay on the record. Permanently. Clearly. For everyone.</p>
+      </div>
+      <div class="why-pillars reveal">
+        <div class="why-pillar">
+          <span class="why-num">01</span>
+          <strong>To Inform</strong>
+          <span>Facts only. Every peso linked to an official government record.</span>
+        </div>
+        <div class="why-pillar">
+          <span class="why-num">02</span>
+          <strong>To Educate</strong>
+          <span>Billions translated into classrooms, hospital beds, and meals so the numbers are felt, not just counted.</span>
+        </div>
+        <div class="why-pillar">
+          <span class="why-num">03</span>
+          <strong>For Awareness</strong>
+          <span>Scandals vanish from the news in weeks. We keep the record open. Accountability does not have an expiry date.</span>
+        </div>
+        <div class="why-pillar">
+          <span class="why-num">04</span>
+          <strong>To Criticize is to Improve</strong>
+          <span>Asking questions about public money is not disloyalty. It is the job of every citizen in a democracy.</span>
+        </div>
+      </div>
+      <div class="why-footer reveal">
+        <a href="about.html" class="why-learn-more">Read the full story behind Korap Tracker</a>
+        <button class="share-btn share-btn--prominent" onclick="shareKorapTracker()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share this tracker
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONFIRMED CASES SECTION ───── -->
+  <section class="cases-section" id="cases">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="pill pill--amber">DOCUMENTED CASES</span>
+        <h2 class="section-title">Hall of Records</h2>
+        <p class="section-subtitle">
+          Every case here is backed by an official government document: a court filing, audit report, or Senate finding. Nothing is alleged without a citation.
+        </p>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar reveal">
+        <div class="filter-group" role="group" aria-label="Filter by status">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Cases</button>
+          <button class="filter-btn" data-filter="coa" id="filter-coa">Flagged by Auditors</button>
+          <button class="filter-btn" data-filter="court" id="filter-court">In Court</button>
+          <button class="filter-btn" data-filter="senate" id="filter-senate">Senate Investigated</button>
+        </div>
+        <div class="total-display">
+          Total on record: <strong id="cases-total">₱0</strong>
+        </div>
+      </div>
+
+      <!-- CASES GRID -->
+      <div class="cases-grid reveal" id="cases-tbody" aria-label="Corruption cases registry">
+        <!-- Populated by JS -->
+      </div>
+
+      <p class="cases-disclaimer">
+        Status labels follow official legal designations, not editorial opinions. All sources are linked for public verification.
+      </p>
+    </div>
+  </section>
+
+  <!-- ───── NEWS FEED SECTION ───── -->
+  <section class="news-section" id="news">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="pill pill--purple">INTELLIGENCE &amp; TRACKERS</span>
+        <h2 class="section-title">Accountability &amp; Corruption Intelligence</h2>
+        <p class="section-subtitle">
+          Real-time tracking of official legal actions, Sandiganbayan arraignments, COA fraud audits, breaking corruption news, and investigative deep dives.
+        </p>
+      </div>
+
+      <!-- CAROUSEL CONTROLS BAR: 3 Tabs on left, Prev/Next navigation on right -->
+      <div class="carousel-toolbar reveal">
+        <div class="news-tab-bar" role="tablist" aria-label="Corruption news and tracker feeds">
+          <button class="news-tab-btn active" data-tab="accountability" id="tab-accountability" role="tab" aria-selected="true">
+            <span class="tab-badge-icon">⚖️</span>
+            Accountability Tracker
+            <span class="tab-count-pill" id="count-accountability">10</span>
+          </button>
+          <button class="news-tab-btn" data-tab="latest" id="tab-latest" role="tab" aria-selected="false">
+            <span class="tab-dot" style="background:var(--clr-red)"></span>
+            Latest News
+            <span class="tab-count-pill" id="count-latest">10</span>
+          </button>
+          <button class="news-tab-btn" data-tab="investigations" id="tab-investigations" role="tab" aria-selected="false">
+            <span class="tab-badge-icon">🔬</span>
+            Investigative Reports
+            <span class="tab-count-pill" id="count-investigations">10</span>
+          </button>
+        </div>
+
+        <div class="carousel-nav-group">
+          <span class="carousel-counter" id="carousel-counter" aria-live="polite">1 of 10</span>
+          <div class="carousel-btn-pair">
+            <button class="carousel-nav-btn" id="carousel-prev" aria-label="Previous card" title="Previous card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-nav-btn" id="carousel-next" aria-label="Next card" title="Next card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL TRACK -->
+      <div class="feed-carousel-wrapper reveal">
+        <div class="feed-carousel-track" id="news-grid" tabindex="0" role="region" aria-label="Interactive feeds carousel">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- CAROUSEL PAGINATION DOTS -->
+      <div class="carousel-dots-container reveal" id="carousel-dots" aria-label="Carousel slide navigation">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- ── EXPLORE MORE BAR ── -->
+      <div class="explore-more reveal">
+        <div class="explore-more-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01"               target="_blank" rel="noopener noreferrer"
+              title="Philippine Center for Investigative Journalism: all investigations">
+            <span class="explore-link-name">PCIJ</span>
+            <span class="explore-link-desc">Investigative Journalism</span>
+          </a>
+          <a class="explore-link explore-link--rappler"
+             href="https://www.rappler.com/nation/"
+             target="_blank" rel="noopener noreferrer"
+             title="Rappler: Nation section, accountability beat">
+            <span class="explore-link-name">Rappler</span>
+            <span class="explore-link-desc">Nation / Accountability</span>
+          </a>
+          <a class="explore-link explore-link--inquirer"
+             href="https://www.inquirer.net"
+             target="_blank" rel="noopener noreferrer"
+             title="Inquirer: National accountability reporting">
+            <span class="explore-link-name">Inquirer</span>
+            <span class="explore-link-desc">NewsInfo Section</span>
+          </a>
+          <a class="explore-link explore-link--gma"
+             href="https://www.gmanetwork.com/news/topstories/"
+             target="_blank" rel="noopener noreferrer"
+             title="GMA News: Top Stories and National Accountability Reports">
+            <span class="explore-link-name">GMA News</span>
+            <span class="explore-link-desc">Top Stories / Nation</span>
+          </a>
+          <a class="explore-link explore-link--philstar"
+             href="https://www.philstar.com/headlines"
+             target="_blank" rel="noopener noreferrer"
+             title="Philippine Star: Headlines section">
+            <span class="explore-link-name">PhilStar</span>
+            <span class="explore-link-desc">Headlines</span>
+          </a>
+          <a class="explore-link explore-link--pcij"
+             href="https://pcij.org"
+             target="_blank" rel="noopener noreferrer"
+             title="PCIJ: Philippine Center for Investigative Journalism">
+            <span class="explore-link-name">PCIJ</span>
+            <span class="explore-link-desc">Investigative Reports</span>
+          </a>
+        </div>
+        <div class="explore-divider"></div>
+        <div class="explore-aggregators">
+          <a class="explore-link explore-link--google"
+             href="https://news.google.com/search?q=Philippines+corruption+graft+plunder&hl=en-PH&gl=PH&ceid=PH:en"
+             target="_blank" rel="noopener noreferrer"
+             title="Google News: Search Philippines corruption graft plunder">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <span class="explore-link-name">Google News</span>
+            <span class="explore-link-desc">All sources, real-time</span>
+          </a>
+          <a class="explore-link explore-link--twitter"
+             href="https://x.com/search?q=%23PhCorruption+OR+%22graft%22+OR+%22plunder%22+%23Philippines&f=live"
+             target="_blank" rel="noopener noreferrer"
+             title="X (Twitter) live search: #PhCorruption">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.735l7.73-8.835L1.254 2.25H8.08l4.258 5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span class="explore-link-name">X / Twitter</span>
+            <span class="explore-link-desc">#PhCorruption live</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── METHODOLOGY SECTION ───── -->
+  <section class="methodology-section" id="methodology">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="pill pill--green">OPEN METHODOLOGY</span>
+        <h2 class="section-title">How We Calculate This</h2>
+      </div>
+
+      <div class="method-grid">
+        <div class="method-card reveal">
+          <div class="method-num">01</div>
+          <h3 class="method-title">The Live Ticker (Tier 2: Estimated)</h3>
+          <p class="method-body">
+            The ticking counter is an <em>estimate based on macroeconomic benchmarks</em>. The 20% figure is drawn from the <strong>UNODC</strong> ("corruption costs developing countries 10–25% of public procurement value") and <strong>World Bank</strong> governance assessments, which classify the Philippines as high-risk for procurement leakage. The live meter tracks cumulative estimated losses since <strong>January 1, 2020</strong> to the present day in real time.
+          </p>
+          <div class="formula-box">
+            <code>₱5,768,000,000,000 (GAA benchmark) × 0.20 = ₱1,153,600,000,000 / year</code><br/>
+            <code>÷ 31,536,000 seconds = ~₱36,591 / second</code><br/>
+            <code>Elapsed since Jan 1, 2020: ~213M+ seconds × ~₱36,591/sec ≈ ₱7.8 Trillion</code>
+          </div>
+        </div>
+        <div class="method-card reveal">
+          <div class="method-num">02</div>
+          <h3 class="method-title">Case Registry (Tier 1: Documented)</h3>
+          <p class="method-body">
+            Every entry in our case registry is linked to an official document: a COA Notice of Disallowance, a Sandiganbayan decision, a PCGG accomplishment report, or a Senate Blue Ribbon Committee resolution. We do not editorialize guilt. We cite official legal status only.
+          </p>
+        </div>
+        <div class="method-card reveal">
+          <div class="method-num">03</div>
+          <h3 class="method-title">Legal Disclaimer</h3>
+          <p class="method-body">
+            This site does not declare guilt. All individuals mentioned are cited in connection with official proceedings only. Terms such as "Indicted," "Under Litigation," and "COA Flagged" refer to official legal designations. This site is an educational public-interest accountability tool built under the principles of press freedom.
+          </p>
+        </div>
+        <div class="method-card reveal">
+          <div class="method-num">04</div>
+          <h3 class="method-title">Primary Sources</h3>
+          <p class="method-body">
+            Commission on Audit (coa.gov.ph) · Sandiganbayan (sb.judiciary.gov.ph) · Supreme Court e-Library (sc.judiciary.gov.ph) · PCGG (pcgg.gov.ph) · Philippine Center for Investigative Journalism (pcij.org) · FOI Philippines (foi.gov.ph) · PhilGEPS (philgeps.gov.ph) · UNODC (unodc.org) · World Bank (worldbank.org)
+          </p>
+          <a href="sources.html" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;font-size:.88rem;font-weight:600;color:var(--clr-green);text-decoration:none;border:1px solid rgba(34,197,94,.3);padding:.5rem 1rem;border-radius:8px;background:rgba(34,197,94,.08)">View Full Citation Registry →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚖</span>
+        <span class="footer-name">KORAP TRACKER</span>
+      </div>
+      <p class="footer-mission">
+        A public-interest accountability tool. All data sourced from official Philippine government records and verified investigative journalism.
+        Not affiliated with any political party or organization.
+      </p>
+      <p class="footer-legal">
+        Built to inform. Not to accuse. Every number is a citation. Every citation is a link.
+      </p>
+      <div class="footer-links" style="margin-top:.75rem;margin-bottom:.75rem;display:flex;gap:1.25rem;justify-content:center;font-size:.85rem;flex-wrap:wrap">
+        <a href="index.html" style="color:var(--clr-text-2);text-decoration:none">Tracker Home</a> ·
+        <a href="about.html" style="color:var(--clr-cyan);font-weight:600;text-decoration:none">Why We Exist (Manifesto)</a> ·
+        <a href="sources.html" style="color:var(--clr-green);font-weight:600;text-decoration:none">Sources Registry ✓</a>
+      </div>
+      <p class="footer-copy">© 2026 Korap Tracker Project · Open Source · Data from COA, Sandiganbayan, PCGG, Senate</p>
+    </div>
+  </footer>
+
+  <div id="share-toast" style="display:none;position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:#0f172a;border:1px solid rgba(6,182,212,.5);color:#e2e8f0;padding:.65rem 1.25rem;border-radius:8px;font-size:.85rem;font-weight:600;z-index:10001;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.6)">Link copied to clipboard!</div>
+
+  <!-- Share Modal Dialog -->
+  <div id="share-modal" class="share-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal-card">
+      <div class="share-modal-header">
+        <div class="share-modal-header-text">
+          <h3 id="share-modal-title" class="share-modal-title">Share Korap Tracker</h3>
+          <p class="share-modal-desc" id="share-modal-desc">Over ₱399 billion in documented corruption cases. Every peso linked to an official record. Inform. Educate. Hold accountable.</p>
+        </div>
+        <button type="button" class="share-modal-close" id="share-modal-close" aria-label="Close share dialog">&times;</button>
+      </div>
+
+      <div class="share-copy-section">
+        <label class="share-field-label" for="share-url-input">Direct Page Link</label>
+        <div class="share-copy-box">
+          <input type="text" id="share-url-input" class="share-url-input" readonly value="https://halalan-tracker.ph/" />
+          <button type="button" id="share-copy-btn" class="share-copy-btn" title="Copy to clipboard">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="share-copy-text">Copy Link</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="share-social-section">
+        <div class="share-field-label">Share to Social &amp; Messaging</div>
+        <div class="share-social-grid">
+          <a id="share-link-x" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--x">
+            <span class="share-social-icon">𝕏</span>
+            <span>X / Twitter</span>
+          </a>
+          <a id="share-link-fb" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--fb">
+            <span class="share-social-icon">f</span>
+            <span>Facebook</span>
+          </a>
+          <a id="share-link-wa" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--wa">
+            <span class="share-social-icon">💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <a id="share-link-tg" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--tg">
+            <span class="share-social-icon">✈</span>
+            <span>Telegram</span>
+          </a>
+          <a id="share-link-reddit" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--reddit">
+            <span class="share-social-icon">🔴</span>
+            <span>Reddit</span>
+          </a>
+          <a id="share-link-email" href="#" class="share-social-btn share-social-btn--email">
+            <span class="share-social-icon">✉</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="share-device-row" class="share-device-row">
+        <button type="button" id="share-device-btn" class="share-device-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Open Device Share Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-PH" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Sources &amp; Citation Bibliography | Korap Tracker</title>
+  <meta name="title" content="Sources &amp; Citation Bibliography | Korap Tracker" />
+  <meta name="description" content="Official bibliography, audit report citations, court dockets, and primary sources verifying all figures on the Korap Tracker." />
+  <meta name="keywords" content="Philippine corruption sources, Korap Tracker sources, COA audit reports bibliography, Sandiganbayan court dockets, PCGG asset recovery records, Philippine public procurement data, Korap Tracker methodology" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://halalan-tracker.ph/sources.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://halalan-tracker.ph/sources.html" />
+  <meta property="og:title" content="Sources &amp; Methodology | Korap Tracker" />
+  <meta property="og:description" content="Complete primary documentation registry: COA notices, Sandiganbayan decisions, Senate records, and journalistic investigations." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sources-hero {
+      padding-block: clamp(6rem, 10vw, 9rem) clamp(3rem, 5vw, 5rem);
+      padding-inline: var(--inner-pad);
+      text-align: center;
+      border-bottom: 1px solid var(--clr-border);
+      background: var(--clr-surface);
+      position: relative;
+    }
+    .sources-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(34,197,94,.08), transparent);
+      pointer-events: none;
+    }
+    .sources-body {
+      max-width: var(--inner-max);
+      margin-inline: auto;
+      padding: var(--section-pad) var(--inner-pad);
+    }
+    .audit-notice {
+      background: var(--clr-surface);
+      border: 1px solid rgba(34,197,94,.3);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .audit-notice-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: .1rem; }
+    .audit-notice h3 { font-size: 1rem; font-weight: 700; color: var(--clr-green); margin-bottom: .4rem; }
+    .audit-notice p { font-size: .88rem; color: var(--clr-text-2); line-height: 1.7; }
+    .audit-notice a { color: var(--clr-green); }
+
+    .corrections-box {
+      background: var(--clr-surface);
+      border: 1px solid rgba(245,158,11,.3);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+    }
+    .corrections-box h3 { font-size: 1rem; font-weight: 700; color: var(--clr-amber); margin-bottom: 1rem; }
+    .correction-item {
+      display: flex;
+      gap: 1rem;
+      padding: .85rem 0;
+      border-bottom: 1px solid var(--clr-border);
+      font-size: .87rem;
+    }
+    .correction-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .correction-badge {
+      flex-shrink: 0;
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      padding: .2rem .55rem;
+      border-radius: 5px;
+      background: rgba(245,158,11,.15);
+      color: var(--clr-amber);
+      height: fit-content;
+      margin-top: .1rem;
+    }
+    .correction-text { color: var(--clr-text-2); line-height: 1.6; }
+    .correction-text strong { color: var(--clr-text-1); }
+
+    .sources-group { margin-bottom: 3rem; }
+    .sources-group-title {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--clr-text-3);
+      padding-bottom: .75rem;
+      border-bottom: 1px solid var(--clr-border);
+      margin-bottom: 1.25rem;
+    }
+    .source-entry {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: .75rem;
+      transition: border-color var(--dur-fast);
+    }
+    .source-entry:hover { border-color: var(--clr-green); }
+    .source-entry-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: .6rem;
+      flex-wrap: wrap;
+    }
+    .source-title { font-size: .95rem; font-weight: 700; color: var(--clr-text-1); }
+    .source-type-badge {
+      font-size: .65rem;
+      font-weight: 700;
+      padding: .2rem .6rem;
+      border-radius: 5px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .source-type-badge.govt { background: rgba(59,130,246,.15); color: var(--clr-blue); }
+    .source-type-badge.intl { background: rgba(168,85,247,.15); color: var(--clr-purple); }
+    .source-type-badge.court { background: rgba(239,68,68,.15); color: var(--clr-red); }
+    .source-type-badge.journalism { background: rgba(6,182,212,.15); color: var(--clr-cyan); }
+    .source-meta { font-size: .8rem; color: var(--clr-text-3); margin-bottom: .6rem; }
+    .source-quote {
+      font-size: .85rem;
+      color: var(--clr-text-2);
+      line-height: 1.65;
+      font-style: italic;
+      border-left: 3px solid var(--clr-border-light);
+      padding-left: 1rem;
+      margin-bottom: .6rem;
+    }
+    .source-url a {
+      font-size: .8rem;
+      color: var(--clr-blue);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      word-break: break-all;
+    }
+    .source-url a:hover { text-decoration: underline; }
+
+    .case-source-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: .75rem;
+      transition: all var(--dur-mid);
+      scroll-margin-top: 100px;
+    }
+    .case-source-card:hover { border-color: var(--clr-blue); }
+    .case-source-card:target {
+      border-color: var(--clr-cyan);
+      background: rgba(6,182,212,.08);
+      box-shadow: 0 0 24px rgba(6,182,212,.25);
+    }
+    .case-source-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: .5rem;
+      flex-wrap: wrap;
+    }
+    .case-source-name { font-weight: 700; font-size: .95rem; }
+    .case-source-amount {
+      font-family: var(--font-mono);
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--clr-red);
+      flex-shrink: 0;
+    }
+    .case-source-doc { font-size: .82rem; color: var(--clr-text-2); margin-bottom: .45rem; }
+    .case-source-notes {
+      font-size: .8rem;
+      color: var(--clr-text-3);
+      line-height: 1.65;
+      background: var(--clr-bg);
+      border: 1px solid var(--clr-border);
+      border-radius: 7px;
+      padding: .6rem .9rem;
+      font-family: var(--font-mono);
+    }
+    .case-source-link a {
+      font-size: .8rem;
+      color: var(--clr-blue);
+      text-decoration: none;
+    }
+    .case-source-link a:hover { text-decoration: underline; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--clr-text-2);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      transition: color var(--dur-fast);
+    }
+    .back-link:hover { color: var(--clr-text-1); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Korap Tracker Home">
+        <span class="logo-icon">⚖</span>
+        <span class="logo-text">KORAP</span>
+        <span class="logo-sub">Tracker</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#tracker" class="nav-link">Tracker</a>
+        <a href="index.html#impact" class="nav-link">Human Cost</a>
+        <a href="about.html" class="nav-link">Why We Exist</a>
+        <a href="index.html#cases" class="nav-link">Cases</a>
+        <a href="index.html#news" class="nav-link">Intel</a>
+        <a href="sources.html" class="nav-link" style="color:var(--clr-green)">Sources ✓</a>
+      </div>
+      <div class="nav-cta">
+        <span class="live-badge" title="Live real-time corruption ticker active">
+          <span class="live-dot" aria-hidden="true"></span>
+          LIVE
+        </span>
+        <button class="share-btn nav-share-btn" id="share-btn-nav" onclick="shareSources()" title="Share this page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sources-hero">
+    <div class="section-inner" style="position:relative">
+      <span class="pill pill--green" style="margin-bottom:1rem">OPEN METHODOLOGY</span>
+      <h1 class="section-title" style="margin-bottom:1rem">Sources & Citation Registry</h1>
+      <p class="section-subtitle" style="margin:0 auto">
+        Every number on this site is documented here. We distinguish between <strong>official audited figures</strong>,
+        <strong>court-adjudicated amounts</strong>, and <strong>estimated benchmarks</strong>.
+        Nothing is presented as fact without a traceable source.
+      </p>
+    </div>
+  </div>
+
+  <div class="sources-body">
+    <a href="index.html" class="back-link">
+      ← Back to Tracker
+    </a>
+
+    <!-- AUDIT NOTICE -->
+    <div class="audit-notice">
+      <div class="audit-notice-icon">🔎</div>
+      <div>
+        <h3>Data Integrity Commitment</h3>
+        <p>
+          This page is the authoritative record for all figures on Korap Tracker. Each entry includes the exact source document,
+          the specific quote or figure used, methodological notes, and a direct URL. Where figures were found to be incorrect
+          or unverifiable in initial data, corrections are documented below. This tracker is designed to be challenged,
+          and if you find an error, the correction will appear here.
+          Cyberlibel laws under <a href="https://en.wikipedia.org/wiki/Cybercrime_Prevention_Act_of_2012" target="_blank" rel="noopener">RA 10175</a>
+          are taken seriously; all amounts reference official proceedings, not editorial opinion.
+        </p>
+      </div>
+    </div>
+
+    <!-- CORRECTIONS LOG -->
+    <div class="corrections-box">
+      <h3>⚠ Data Corrections Log: Version 1.1 (Oct 2024)</h3>
+      <div class="correction-item">
+        <span class="correction-badge">CORRECTED</span>
+        <span class="correction-text">
+          <strong>NFA Case:</strong> Initial figure of ₱700B was removed; no verifiable COA report supports this specific aggregate total.
+          Replaced with COA-documented <strong>₱5B in rice inventory losses (2019 to 2023)</strong> per GMA News citing COA findings.
+        </span>
+      </div>
+      <div class="correction-item">
+        <span class="correction-badge">CORRECTED</span>
+        <span class="correction-text">
+          <strong>MWSS Case:</strong> Initial figure of ₱1.9B was unverified. Corrected to <strong>₱845.71M</strong>,
+          the specific COA-flagged amount for excess Kaliwa Dam collections, per Inquirer.net citing the COA 2022 AAR on MWSS.
+        </span>
+      </div>
+      <div class="correction-item">
+        <span class="correction-badge">CORRECTED</span>
+        <span class="correction-text">
+          <strong>DepEd Laptop Case:</strong> Year corrected from 2014 to <strong>2021</strong> (Bayanihan 2 Act procurement).
+          The ₱2.4B total contract figure is retained; the Senate overpricing estimate is ₱979M.
+        </span>
+      </div>
+      <div class="correction-item">
+        <span class="correction-badge">CORRECTED</span>
+        <span class="correction-text">
+          <strong>Marcos/PCGG Case:</strong> Updated from ₱175B to <strong>₱280B</strong> to reflect the most recent (2023)
+          PCGG accomplishment data (~₱180B cash + ₱100B assets recovered). Original ₱589B / $10B ill-gotten wealth estimate retained as baseline.
+        </span>
+      </div>
+      <div class="correction-item">
+        <span class="correction-badge">CORRECTED</span>
+        <span class="correction-text">
+          <strong>PDAF Source:</strong> GR 213847 (Enrile bail case) was removed as a primary citation for Napoles conviction.
+          Replaced with Wikipedia's PDAF scam article (citing Senate, Ombudsman, and Sandiganbayan records) and PCIJ's full Napoles conviction report.
+        </span>
+      </div>
+      <div class="correction-item">
+        <span class="correction-badge">CLARIFIED</span>
+        <span class="correction-text">
+          <strong>20% Ticker Benchmark:</strong> Attribution to Ombudsman Morales was removed; no verifiable public statement
+          with that specific figure was found. The 20% figure is now correctly attributed to the <strong>World Bank and UNODC
+          international procurement leakage benchmarks</strong>, consistently applied to Philippines in ADB country risk assessments.
+          The ticker is explicitly labeled as an ESTIMATE throughout the site.
+        </span>
+      </div>
+    </div>
+
+    <!-- SECTION 1: TICKER SOURCES -->
+    <div class="sources-group">
+      <div class="sources-group-title">1. Live Ticker: Budget and Leakage Rate Sources</div>
+
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">Republic Act No. 11975: General Appropriations Act of 2024 (₱5.768T)</div>
+          <span class="source-type-badge govt">Government Law</span>
+        </div>
+        <div class="source-meta">Department of Budget and Management · Published: December 2023</div>
+        <blockquote class="source-quote">
+          "President Marcos signed the ₱5.768 trillion 2024 national budget (RA 11975) on December 20, 2023 at Malacañan Palace."
+        </blockquote>
+        <div class="source-url"><a href="https://www.dbm.gov.ph/index.php/budget-documents/2024" target="_blank" rel="noopener">https://www.dbm.gov.ph/index.php/budget-documents/2024</a></div>
+      </div>
+
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">DBM Official 2024 Budget Documents</div>
+          <span class="source-type-badge govt">Government / Official</span>
+        </div>
+        <div class="source-meta">Department of Budget and Management · 2024</div>
+        <blockquote class="source-quote">
+          "FY 2024 General Appropriations: ₱5,768,000,000,000. Published official budget volumes for all departments."
+        </blockquote>
+        <div class="source-url"><a href="https://www.dbm.gov.ph/index.php/budget-documents/2024" target="_blank" rel="noopener">https://www.dbm.gov.ph/index.php/budget-documents/2024</a></div>
+      </div>
+
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">UNODC: The Cost of Corruption (20% Procurement Leakage Benchmark)</div>
+          <span class="source-type-badge intl">International Org.</span>
+        </div>
+        <div class="source-meta">United Nations Office on Drugs and Crime · Ongoing</div>
+        <blockquote class="source-quote">
+          "Corruption costs developing countries up to $2.6 trillion per year. Public procurement is the activity most vulnerable to corruption, with losses estimated at 10 to 25% of total procurement value in high-risk environments."
+        </blockquote>
+        <div class="source-url"><a href="https://www.unodc.org/corruption/en/index.html" target="_blank" rel="noopener">https://www.unodc.org/corruption/en/index.html</a></div>
+      </div>
+
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">World Bank: Philippines Governance &amp; Anticorruption Assessment</div>
+          <span class="source-type-badge intl">International Org.</span>
+        </div>
+        <div class="source-meta">World Bank · Philippines Country Overview</div>
+        <blockquote class="source-quote">
+          "The Philippines is classified as a high-risk country for procurement leakage. World Bank governance assessments note 10 to 25% of procurement funds are typically lost in high-risk public expenditure environments."
+        </blockquote>
+        <div class="source-url"><a href="https://www.worldbank.org/ext/en/country/philippines" target="_blank" rel="noopener">https://www.worldbank.org/ext/en/country/philippines</a></div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: CASE-BY-CASE CITATIONS -->
+    <div class="sources-group">
+      <div class="sources-group-title">2. Documented Case Registry: Per-Case Citations</div>
+      <div id="case-sources-list">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION 3: HUMAN COST SOURCES -->
+    <div class="sources-group">
+      <div class="sources-group-title">3. Human Cost Calculator: Unit Cost Basis</div>
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">DepEd School Building Program: ₱250,000/Classroom Unit Cost</div>
+          <span class="source-type-badge govt">Government / Official</span>
+        </div>
+        <div class="source-meta">Department of Education School Building Program</div>
+        <blockquote class="source-quote">
+          Standard DepEd School Building Program unit cost for a single-storey classroom is approximately ₱250,000 (simple construction). Multi-storey and typhoon-resistant variants range higher.
+        </blockquote>
+        <div class="source-url"><a href="https://en.wikipedia.org/wiki/Department_of_Education_(Philippines)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Department_of_Education_(Philippines)</a></div>
+      </div>
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">PhilHealth Benefits Package: ~₱50,000/Hospitalization Average</div>
+          <span class="source-type-badge govt">Government / Official</span>
+        </div>
+        <div class="source-meta">Philippine Health Insurance Corporation</div>
+        <blockquote class="source-quote">
+          PhilHealth case rates for standard hospital admissions range from ₱8,000 to ₱120,000+ depending on diagnosis. ₱50,000 is used as a conservative average across mid-severity cases.
+        </blockquote>
+        <div class="source-url"><a href="https://www.philhealth.gov.ph/benefits/" target="_blank" rel="noopener">https://www.philhealth.gov.ph/benefits/</a></div>
+      </div>
+      <div class="source-entry">
+        <div class="source-entry-header">
+          <div class="source-title">CHED Tuition Subsidy: ~₱100,000/Scholar/Year</div>
+          <span class="source-type-badge govt">Government / Official</span>
+        </div>
+        <div class="source-meta">Commission on Higher Education: UniFAST Program</div>
+        <blockquote class="source-quote">
+          Under RA 10931 (Universal Access to Quality Tertiary Education Act), students in SUCs receive free tuition. CHED-administered scholarship subsidies under UniFAST programs provide ~₱60,000 to ₱100,000 per beneficiary annually for private HEI students.
+        </blockquote>
+        <div class="source-url"><a href="https://en.wikipedia.org/wiki/Commission_on_Higher_Education_(Philippines)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Commission_on_Higher_Education_(Philippines)</a></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚖</span>
+        <span class="footer-name">KORAP TRACKER</span>
+      </div>
+      <p class="footer-mission">
+        Every number is a citation. Every citation is a link. If a figure cannot be sourced, it is either labeled as an estimate or removed.
+      </p>
+      <div class="footer-links" style="margin-top:.75rem;margin-bottom:.75rem;display:flex;gap:1.25rem;justify-content:center;font-size:.85rem;flex-wrap:wrap">
+        <a href="index.html" style="color:var(--clr-text-2);text-decoration:none">Tracker Home</a> ·
+        <a href="about.html" style="color:var(--clr-cyan);font-weight:600;text-decoration:none">Why We Exist (Manifesto)</a> ·
+        <a href="sources.html" style="color:var(--clr-green);font-weight:600;text-decoration:none">Sources Registry ✓</a>
+      </div>
+      <p class="footer-copy">© 2026 Korap Tracker Project · <a href="index.html" style="color:var(--clr-blue)">← Back to Tracker</a></p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    // Render case citations from data.js
+    const list = document.getElementById('case-sources-list');
+
+    function escHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+    function fmtPeso(n) {
+      if (n >= 1e9) return `₱${(n/1e9).toFixed(2)}B`;
+      if (n >= 1e6) return `₱${(n/1e6).toFixed(0)}M`;
+      return `₱${n.toLocaleString('en-PH')}`;
+    }
+
+    list.innerHTML = CORRUPTION_CASES.map(c => `
+      <div class="case-source-card" id="case-source-${c.id}">
+        <div class="case-source-header">
+          <div class="case-source-name">${escHtml(c.name)}</div>
+          <div class="case-source-amount">${fmtPeso(c.amount)}</div>
+        </div>
+        <div class="case-source-doc">📄 ${escHtml(c.sourceName)}</div>
+        <div class="case-source-notes">// ${escHtml(c.notes)}</div>
+        <div class="case-source-link" style="margin-top:.6rem">
+          <a href="${escHtml(c.source)}" target="_blank" rel="noopener">↗ View Source Document</a>
+        </div>
+      </div>
+    `).join('');
+
+    // Share Sources logic
+    function getShareUrl() {
+      if (window.location.protocol === 'file:' || !window.location.hostname || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return 'https://halalan-tracker.ph/sources.html';
+      }
+      return window.location.href;
+    }
+
+    function showToast(msg = 'Link copied to clipboard!') {
+      const t = document.getElementById('share-toast');
+      if (t) {
+        t.textContent = msg;
+        t.style.display = 'block';
+        clearTimeout(t._timeout);
+        t._timeout = setTimeout(() => { t.style.display = 'none'; }, 2500);
+      }
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+      }
+      return fallbackCopy(text);
+    }
+
+    function fallbackCopy(text) {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.top = '0';
+        ta.style.left = '-9999px';
+        ta.setAttribute('readonly', '');
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return ok ? Promise.resolve() : Promise.reject();
+      } catch (err) {
+        return Promise.reject(err);
+      }
+    }
+
+    function shareSources() {
+      const modal = document.getElementById('share-modal');
+      const shareUrl = getShareUrl();
+      const title = 'Sources & Citation Registry | Korap Tracker';
+      const text = 'Every figure on Korap Tracker is traced directly to primary audit reports, court dockets, and verified investigative records.';
+
+      document.getElementById('share-url-input').value = shareUrl;
+
+      const encUrl = encodeURIComponent(shareUrl);
+      const encText = encodeURIComponent(text);
+      const encTitle = encodeURIComponent(title);
+
+      document.getElementById('share-link-x').href = `https://twitter.com/intent/tweet?text=${encText}&url=${encUrl}`;
+      document.getElementById('share-link-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encUrl}`;
+      document.getElementById('share-link-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + shareUrl)}`;
+      document.getElementById('share-link-tg').href = `https://t.me/share/url?url=${encUrl}&text=${encText}`;
+      document.getElementById('share-link-reddit').href = `https://reddit.com/submit?url=${encUrl}&title=${encTitle}`;
+      document.getElementById('share-link-email').href = `mailto:?subject=${encTitle}&body=${encodeURIComponent(text + '\n\n' + shareUrl)}`;
+
+      modal.classList.add('open');
+    }
+
+    // Modal controls
+    const shareModal = document.getElementById('share-modal');
+    const closeBtn = document.getElementById('share-modal-close');
+    const copyBtn = document.getElementById('share-copy-btn');
+    const copyTextEl = document.getElementById('share-copy-text');
+    const urlInput = document.getElementById('share-url-input');
+    const deviceBtn = document.getElementById('share-device-btn');
+
+    if (closeBtn) closeBtn.addEventListener('click', () => shareModal.classList.remove('open'));
+    if (shareModal) shareModal.addEventListener('click', e => { if (e.target === shareModal) shareModal.classList.remove('open'); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && shareModal) shareModal.classList.remove('open'); });
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        copyText(urlInput.value).then(() => {
+          copyTextEl.textContent = 'Copied!';
+          copyBtn.style.background = 'var(--clr-green)';
+          showToast('Link copied to clipboard!');
+          setTimeout(() => {
+            copyTextEl.textContent = 'Copy Link';
+            copyBtn.style.background = '';
+          }, 2000);
+        }).catch(() => {
+          showToast('Please copy the URL box manually.');
+        });
+      });
+    }
+
+    if (urlInput) urlInput.addEventListener('click', () => urlInput.select());
+
+    if (deviceBtn) {
+      if (navigator.share) {
+        deviceBtn.style.display = 'flex';
+        deviceBtn.addEventListener('click', () => {
+          navigator.share({
+            title: 'Sources & Citation Registry | Korap Tracker',
+            text: 'Every figure on Korap Tracker is traced directly to primary audit reports, court dockets, and verified investigative records.',
+            url: urlInput.value
+          }).catch(() => {});
+        });
+      } else {
+        const row = document.getElementById('share-device-row');
+        if (row) row.style.display = 'none';
+      }
+    }
+  </script>
+
+  <!-- Share Modal Dialog -->
+  <div id="share-modal" class="share-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal-card">
+      <div class="share-modal-header">
+        <div class="share-modal-header-text">
+          <h3 id="share-modal-title" class="share-modal-title">Share Sources Registry</h3>
+          <p class="share-modal-desc" id="share-modal-desc">Share primary documentation, court dockets, and official audit reports.</p>
+        </div>
+        <button type="button" class="share-modal-close" id="share-modal-close" aria-label="Close share dialog">&times;</button>
+      </div>
+
+      <div class="share-copy-section">
+        <label class="share-field-label" for="share-url-input">Direct Page Link</label>
+        <div class="share-copy-box">
+          <input type="text" id="share-url-input" class="share-url-input" readonly value="https://halalan-tracker.ph/sources.html" />
+          <button type="button" id="share-copy-btn" class="share-copy-btn" title="Copy to clipboard">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="share-copy-text">Copy Link</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="share-social-section">
+        <div class="share-field-label">Share to Social &amp; Messaging</div>
+        <div class="share-social-grid">
+          <a id="share-link-x" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--x">
+            <span class="share-social-icon">𝕏</span>
+            <span>X / Twitter</span>
+          </a>
+          <a id="share-link-fb" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--fb">
+            <span class="share-social-icon">f</span>
+            <span>Facebook</span>
+          </a>
+          <a id="share-link-wa" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--wa">
+            <span class="share-social-icon">💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <a id="share-link-tg" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--tg">
+            <span class="share-social-icon">✈</span>
+            <span>Telegram</span>
+          </a>
+          <a id="share-link-reddit" href="#" target="_blank" rel="noopener noreferrer" class="share-social-btn share-social-btn--reddit">
+            <span class="share-social-icon">🔴</span>
+            <span>Reddit</span>
+          </a>
+          <a id="share-link-email" href="#" class="share-social-btn share-social-btn--email">
+            <span class="share-social-icon">✉</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="share-device-row" class="share-device-row">
+        <button type="button" id="share-device-btn" class="share-device-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Open Device Share Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="share-toast" style="display:none;position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:#0f172a;border:1px solid rgba(6,182,212,.5);color:#e2e8f0;padding:.65rem 1.25rem;border-radius:8px;font-size:.85rem;font-weight:600;z-index:10001;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.6)">Link copied to clipboard!</div>
+</body>
+</html>

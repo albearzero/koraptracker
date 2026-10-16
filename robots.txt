@@ -1,0 +1,6 @@
+# Robots.txt for Korap Tracker (Philippine Corruption Tracker)
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://halalan-tracker.ph/sitemap.xml
