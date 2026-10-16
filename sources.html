@@ -220,14 +220,6 @@
         <span class="logo-text">KORAP</span>
         <span class="logo-sub">Tracker</span>
       </a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html#tracker" class="nav-link">Tracker</a>
-        <a href="index.html#impact" class="nav-link">Human Cost</a>
-        <a href="about.html" class="nav-link">Why We Exist</a>
-        <a href="index.html#cases" class="nav-link">Cases</a>
-        <a href="index.html#news" class="nav-link">Intel</a>
-        <a href="sources.html" class="nav-link" style="color:var(--clr-green)">Sources ✓</a>
-      </div>
       <div class="nav-cta">
         <span class="live-badge" title="Live real-time corruption ticker active">
           <span class="live-dot" aria-hidden="true"></span>
@@ -243,6 +235,16 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile nav overlay (outside navbar to avoid fixed stacking context) -->
+  <div class="nav-links" id="nav-links" aria-label="Mobile Navigation">
+    <a href="index.html#tracker" class="nav-link">Tracker</a>
+    <a href="index.html#impact" class="nav-link">Human Cost</a>
+    <a href="about.html" class="nav-link">Why We Exist</a>
+    <a href="index.html#cases" class="nav-link">Cases</a>
+    <a href="index.html#news" class="nav-link">Intel</a>
+    <a href="sources.html" class="nav-link" style="color:var(--clr-green)">Sources ✓</a>
+  </div>
 
   <div class="sources-hero">
     <div class="section-inner" style="position:relative">
