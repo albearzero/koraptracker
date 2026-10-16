@@ -1077,4 +1077,52 @@ window.openShareModal = openShareModal;
 // Initialize share modal listeners immediately
 ensureShareModal();
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOBILE NAV HAMBURGER
+═══════════════════════════════════════════════════════════════════════════ */
+(function initMobileNav() {
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  const navbar    = document.getElementById('navbar');
+  if (!hamburger || !navLinks) return;
+
+  function openMenu() {
+    hamburger.classList.add('open');
+    navLinks.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  function toggleMenu() {
+    if (hamburger.classList.contains('open')) closeMenu();
+    else openMenu();
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+
+  // Close when a nav link is clicked
+  navLinks.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // Close on click outside nav
+  document.addEventListener('click', e => {
+    if (hamburger.classList.contains('open') &&
+        !navbar.contains(e.target)) {
+      closeMenu();
+    }
+  });
+})();
 

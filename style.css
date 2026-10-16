@@ -282,6 +282,95 @@ body {
   transform: scale(1.1);
 }
 
+/* ── HAMBURGER BUTTON ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--dur-fast), border-color var(--dur-fast);
+}
+.nav-hamburger:hover {
+  background: var(--clr-surface-3);
+  border-color: var(--clr-border-light);
+}
+.nav-hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--clr-text-2);
+  border-radius: 2px;
+  transition: transform var(--dur-mid), opacity var(--dur-mid), width var(--dur-mid);
+  transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── MOBILE NAV OVERLAY ── */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  .nav-hamburger {
+    display: flex;
+  }
+  /* Hide the desktop live badge on very small screens to save space */
+  .live-badge {
+    display: none;
+  }
+  .nav-links {
+    /* Mobile: vertical dropdown overlay */
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    height: 100dvh;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 5rem 1.5rem 2rem;
+    background: rgba(8,12,20,.97);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: none;
+    margin-inline-start: 0;
+    min-width: unset;
+    overflow-y: auto;
+    /* Hidden by default */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-12px);
+    transition: opacity var(--dur-mid), transform var(--dur-mid), visibility 0ms var(--dur-mid);
+    z-index: 99;
+    flex-wrap: nowrap !important;
+  }
+  .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--dur-mid), transform var(--dur-mid), visibility 0ms 0ms;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--clr-border);
+    border-radius: 0;
+    white-space: normal !important;
+  }
+  .nav-link:last-child { border-bottom: none; }
+  .nav-cta .share-btn { display: none; }
+}
+
 /* ── 8. HERO SECTION ── */
 .hero {
   position: relative;
